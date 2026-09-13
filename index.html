@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/memo.js" defer></script>
+  <script src="js/todo.js" defer></script>
+  <script src="js/calendar.js" defer></script>
+</head>
+<body>
+  <header></header>
+
+  <section class="select">
+      <ul>
+        <li><button id="memobutton">メモ</button></li>
+        <li><button id="todobutton">TODO</button></li>
+        <li><button id="calendarbutton">カレンダー</button></li>
+      </ul>
+    </section>
+
+  <main>
+    <div class="all">
+
+      <!-- メモ -->
+      <div id="memo">
+        <div class="memoleft">
+          <button id="addmemo">メモを追加</button>
+          <ul id="memolist"></ul>
+        </div>
+
+        <div class="memoright">
+          <textarea id="memotext" placeholder="メモを入力..."></textarea>
+        </div>
+      </div>
+
+      <!-- TODO -->
+      <div id="todo">
+        <button id="alltodo">すべて</button>
+        <button id="ok">完了</button>
+        <button id="nocomplet">未完了</button>
+        <button id="addtodo">+</button>
+        
+        <ul id="todolist"></ul>
+      </div>
+
+      <!-- カレンダー -->
+      <div id="calendar">
+        <div id = 'left'>
+        <div id="calendarHeader">
+          <button id="prev">←</button>
+          <h2 id="yearMonth"></h2>
+          <button id="next">→</button>
+        </div>
+
+        <div id="week">
+          <div>日</div>
+          <div>月</div>
+          <div>火</div>
+          <div>水</div>
+          <div>木</div>
+          <div>金</div>
+          <div>土</div>
+        </div>
+
+        <div id="days"></div>
+        </div>
+      
+        <div id = 'right'>
+          
+          <div id="calendarmemo"></div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+
+</body>
+</html>
